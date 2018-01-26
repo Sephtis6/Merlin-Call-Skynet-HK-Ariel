@@ -17,12 +17,13 @@ int main()
 	//seed random number generator
 	srand(static_cast<unsigned int>(time(0)));
 
-	//random number between 1 and 100
-	int secretNumber = rand() % 100 + 1;
+	//random number between 1 and 64
+	//enemy location = secretNumber
+	int secretNumber = rand() % 64 + 1;
 	int tries = 0;
 	int guess;
 
-	cout << "\tWelcome to my Guess My Number\n\n";
+	cout << "\tWelcome to Guess My Number\n\n";
 
 	do
 	{
